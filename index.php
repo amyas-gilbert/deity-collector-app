@@ -4,11 +4,9 @@ require 'src/functions.php';
 
 $db = connectToDb('deitybase');
 $deities = getAllDeities($db);
-
 ?>
 
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>Deitybase</title>
@@ -17,9 +15,9 @@ $deities = getAllDeities($db);
 <body>
     <h1>BEHOLD!! Some deities and stuff:</h1>
     <div>
-        <?php displayDeities($deities);?>
+        <?php foreach ($deities as $deity) {
+            echo displayDeity($deity);
+        } ?>
     </div>
-
-
 </body>
 </html>
