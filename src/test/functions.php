@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class Functions extends TestCase
 {
-    public function testDisplayDeity()
+    public function testDisplayDeity():
     {
         $array = 
         [
@@ -18,7 +18,7 @@ class Functions extends TestCase
         $expecetedOuptut = '<h2>Blind Io</h2>' 
         . '<p>Blind Io is a deity from the Discworld mythology,</p>'
         . '<p>is associated with lightning,</p>'
-        . '<p> and is usually portrayed holding a hammer.</p>';;
+        . '<p> and is usually portrayed holding a hammer.</p>';
         $actualOutput = displayDeity($array);
         $this->assertEquals($expecetedOuptut, $actualOutput);
     }
