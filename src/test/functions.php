@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class Functions extends TestCase
 {
-    public function testDisplayDeity():
+    public function testSuccessDisplayDeity()
     {
         $array = 
         [
@@ -21,5 +21,18 @@ class Functions extends TestCase
         . '<p> and is usually portrayed holding a hammer.</p>';
         $actualOutput = displayDeity($array);
         $this->assertEquals($expecetedOuptut, $actualOutput);
+    }
+
+    public function testFailureDisplayDeity()
+    {
+        $array = 
+        [
+            'blah' => 'Blind Io',
+            'whatever' => 'the Discworld',
+            'stuff' => 'lightning',
+            'nnnnggggg' => 'a hammer'
+        ];
+        $this->expectException(Exception::class);
+        displayDeity($array);
     }
 }
