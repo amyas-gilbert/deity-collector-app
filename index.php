@@ -1,4 +1,8 @@
 <?php
+require 'src/db.php';
+
+$db = connectToDb('deitybase');
+$deities = getAllDeities($db);
 
 ?>
 
@@ -17,5 +21,9 @@
         <p>Associated to objects getting stuck in the cutlery drawer</p>
         <p>Carries no specific object</p>
     </div>
+
+    <!-- this is just to test the database connection functions -->
+    <?=print_r($deities);?>
+
 </body>
 </html>
