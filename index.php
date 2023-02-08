@@ -20,6 +20,17 @@ $deities = getAllDeities($db);
                 echo displayDeity($deity); 
             } ?>
         </div>
+
+        <div class="addNewDeityForm">
+            <h3>Can't see your favourite deity? No problem! Add them with this form:</h3>
+            <form method="post" action="src/receiveForm.php">
+                <label>Name:</label><input type="text" name="name">
+                <label>Mythology:</label><input type="text" name="mythology">
+                <label>Association:</label><input type="text" name="association">
+                <label>Object:</label><input type="text" name="objects" placeholder="start with a/an/the">
+                <input type="submit" value="Add deity">
+            </form>
+        </div>
     </main>
 </body>
 </html>
