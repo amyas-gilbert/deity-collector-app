@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Feb 08, 2023 at 09:41 AM
+-- Generation Time: Feb 08, 2023 at 09:46 AM
 -- Server version: 5.7.41
 -- PHP Version: 8.0.19
 
@@ -41,7 +41,7 @@ CREATE TABLE `deities` (
 
 INSERT INTO `deities` (`id`, `name`, `mythology`, `association`, `objects`) VALUES
 (1, 'Nanook', 'Inuit', 'polar bears', 'no particular object'),
-(2, 'Thor', 'Norse', 'thunder, trees and fertiliity', 'a hammer'),
+(2, 'Thor', 'Norse', 'thunder, trees and fertility', 'a hammer'),
 (3, 'Anubis', 'Egyptian', 'funerary rites, graves and the underworld', 'a flail'),
 (4, 'Anansi', 'West African/Akan', 'stories, wisdom, knowledge and trickery', 'no particular object'),
 (5, 'Hanuman', 'Indian/Vedic', 'wisdom, courage, strength and self-discipline', 'a mace'),
