@@ -14,3 +14,4 @@ function displayDeity(array $deity): string
 		throw new Exception('One or more array keys are missing or incorrect'); 
 	}
 }
+
