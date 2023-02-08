@@ -17,9 +17,7 @@ $deities = getAllDeities($db);
         <h1>BEHOLD!! Some deities and stuff:</h1>
         <div>
             <?php foreach ($deities as $deity) {
-               
                 echo displayDeity($deity); 
-               
             } ?>
         </div>
     </main>
