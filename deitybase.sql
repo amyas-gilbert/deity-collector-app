@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db:3306
--- Generation Time: Feb 07, 2023 at 10:07 AM
+-- Generation Time: Feb 08, 2023 at 09:41 AM
 -- Server version: 5.7.41
 -- PHP Version: 8.0.19
 
@@ -40,13 +40,13 @@ CREATE TABLE `deities` (
 --
 
 INSERT INTO `deities` (`id`, `name`, `mythology`, `association`, `objects`) VALUES
-(1, 'Nanook', 'Inuit', 'polar bears', 'nothing'),
-(2, 'Thor', 'Norse', 'thunder, trees and fertiliity', 'hammer'),
-(3, 'Anubis', 'Egyptian', 'funerary rites, graves and the underworld', 'flail'),
-(4, 'Anansi', 'West African/Akan', 'stories, wisdom, knowledge and trickery', 'nothing'),
-(5, 'Hanuman', 'Indian/Vedic', 'wisdom, courage, strength and self-discipline', 'mace'),
-(6, 'Hephaestus', 'Greek', 'blacksmithing, technology, fire and volcanoes', 'hammer'),
-(7, 'Dazhbog', 'Slavic', 'sun and fire', 'nothing');
+(1, 'Nanook', 'Inuit', 'polar bears', 'no particular object'),
+(2, 'Thor', 'Norse', 'thunder, trees and fertiliity', 'a hammer'),
+(3, 'Anubis', 'Egyptian', 'funerary rites, graves and the underworld', 'a flail'),
+(4, 'Anansi', 'West African/Akan', 'stories, wisdom, knowledge and trickery', 'no particular object'),
+(5, 'Hanuman', 'Indian/Vedic', 'wisdom, courage, strength and self-discipline', 'a mace'),
+(6, 'Hephaestus', 'Greek', 'blacksmithing, technology, fire and volcanoes', 'a hammer'),
+(7, 'Dazhbog', 'Slavic', 'sun and fire', 'no particular object');
 
 --
 -- Indexes for dumped tables
