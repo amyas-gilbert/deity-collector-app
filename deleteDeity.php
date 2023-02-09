@@ -4,14 +4,16 @@ require 'src/db.php';
 
 $db = connectToDB('deitybase');
 $deities = getAllDeities($db);
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Deitybase</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
+
 <body>
     <main>
         <form method="post" action="src/receiveDeleteDeityForm.php">
@@ -24,4 +26,5 @@ $deities = getAllDeities($db);
         <p>Be sure you've ticked the right boxes. There's no going back from this and these lot aren't the most forgiving types...</p>
     </main>
 </body>
+
 </html>
