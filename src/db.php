@@ -18,3 +18,8 @@ function addNewDeity(PDO $db, array $newDeity) {
     $query = $db->prepare('INSERT INTO deities (name, mythology, association, objects) VALUES (:name, :mythology, :association, :objects)');
     $query->execute(['name' => $newDeity['name'], 'mythology' => $newDeity['mythology'], 'association' => $newDeity['association'], 'objects' => $newDeity['objects']]);
 }
+
+function deleteDeities(PDO $db, string $deitiesToDelete) {
+    $query = $db->prepare("DELETE FROM deities WHERE id IN ($deitiesToDelete)");
+    $query->execute();
+}
