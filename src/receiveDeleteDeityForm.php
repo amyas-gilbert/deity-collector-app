@@ -20,8 +20,8 @@ deleteDeities($db, $deitiesToDelete);
 
 <body>
     <main>
-        <h3>Such power in the hands of a mere mortal!</p>;
-            <a href='../index.php'>See who's left...</a>;
+        <h3>Such power in the hands of a mere mortal!</h3>
+        <p><a href='../index.php'>See who's left...</a></p>
     </main>
 </body>
 
