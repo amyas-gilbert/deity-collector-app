@@ -1,7 +1,7 @@
 <?php
 
 function connectToDb(string $dbName): PDO {
-    $db = new PDO('mysql:host=db;dbname=' . $dbName , 'root', 'password');
+    $db = new PDO('mysql:host=localhost:3306;dbname=' . $dbName , 'deitybase', '%Bjz048o7');
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     return $db;
 }
